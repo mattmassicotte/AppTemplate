@@ -7,6 +7,22 @@ By no means is this a one-size-fits-all kind of problem. Projects can be tremend
 
 ## Overall Project Organization
 
+This Xcode project makes use of [xcconfig](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project) files. I've been using these for a while, and I find it difficult to control my target settings without these. I don't always migrate every setting in, but I always use them when I need to change something.
+
+`User.xcconfig`: a special config file that holds per-user settings. This comes in really handy for open source apps, but is unnecessary for any app that shares a single development team.
+`Project.xcconfig`: global settings that apply to all targets within the project. Occationally it does make sense to override these defaults, but that's rare. `User.xcconfig` is included here.
+
+This was all set up with Xcode 15.1.
+
+## Targets
+
+Because there can be such a variety of targets, I thought it would be useful to create a bunch. Your project almost certainly doesn't need them all.
+
+### MultiPlatformApp
+
+This is a standard application target that builds for all Apple platforms that support standalone apps. That means it supports macOS, iOS, tvOS, and visionOS. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
+
+
 ## Contributing and Collaboration
 
 I'd love to hear from you! Get in touch via [mastodon](https://mastodon.social/@mattiem), an issue, or a pull request.
