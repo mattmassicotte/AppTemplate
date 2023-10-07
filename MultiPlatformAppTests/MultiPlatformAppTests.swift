@@ -1,13 +1,6 @@
-//
-//  AppTemplateTests.swift
-//  AppTemplateTests
-//
-//  Created by Matthew Massicotte on 2023-10-07.
-//
-
 import XCTest
 
-final class AppTemplateTests: XCTestCase {
+final class MultiPlatformAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

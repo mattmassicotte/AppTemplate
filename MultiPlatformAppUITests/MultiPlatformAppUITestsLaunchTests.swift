@@ -1,13 +1,6 @@
-//
-//  AppTemplateUITestsLaunchTests.swift
-//  AppTemplateUITests
-//
-//  Created by Matthew Massicotte on 2023-10-07.
-//
-
 import XCTest
 
-final class AppTemplateUITestsLaunchTests: XCTestCase {
+final class MultiPlatformAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

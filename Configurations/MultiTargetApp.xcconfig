@@ -6,9 +6,6 @@ SUPPORTED_PLATFORMS = macosx iphonesimulator iphoneos appletvsimulator appletvos
 TARGETED_DEVICE_FAMILY = 1,2,3
 DEVELOPMENT_ASSET_PATHS = ${TARGET_NAME}/Preview\ Content
 
-PRODUCT_NAME = ${TARGET_NAME}
-PRODUCT_MODULE_NAME = ${TARGET_NAME}
-PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX)org.massicotte.${PRODUCT_MODULE_NAME}
 SKIP_INSTALL = NO
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
