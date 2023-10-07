@@ -14,6 +14,15 @@ This Xcode project makes use of [xcconfig](https://developer.apple.com/documenta
 
 This was all set up with Xcode 15.1.
 
+## Building
+
+This project seperates out signing and bundle identifier details. This makes sense for a project that may have collabrators that do not share code signing information.
+
+- clone the repo
+- `cp User.xcconfig.template User.xcconfig`
+- update `User.xcconfig` with your personal information
+- build/run with Xcode
+
 ## Targets
 
 Because there can be such a variety of targets, I thought it would be useful to create a bunch. Your project almost certainly doesn't need them all.
@@ -22,6 +31,7 @@ Because there can be such a variety of targets, I thought it would be useful to 
 
 This is a standard application target that builds for all Apple platforms that support standalone apps. That means it supports macOS, iOS, tvOS, and visionOS. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
 
+This app also includes to related test targets: `MultiPlatformAppTests` and `MultiPlatformAppUITests`.
 
 ## Contributing and Collaboration
 
