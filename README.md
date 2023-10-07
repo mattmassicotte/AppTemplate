@@ -33,6 +33,14 @@ This is a standard application target that builds for all Apple platforms that s
 
 This app also includes to related test targets: `MultiPlatformAppTests` and `MultiPlatformAppUITests`.
 
+### SharedFramework
+
+This is a shared framework target. This is a really useful structure for storing common code between an app and other bundled executables, like a widget extension. I've chosen to use a dynamic library here. This is a trade-off between app launch and app size. A dynamic library will require a little more work at launch time. But in exchange, there's only one copy of the shared code within the app.
+
+A static library, which is the default for SPM packages, will improve launch times. But, you'll have to pay a size penalty for each excutable that needs the shared code. Inceased binary sizes can also hurt launch times, so this isn't a trival thing to compare.
+
+I wouldn't overthink this too much. Especially since a framework also is a logical organizational structure.
+
 ## Contributing and Collaboration
 
 I'd love to hear from you! Get in touch via [mastodon](https://mastodon.social/@mattiem), an issue, or a pull request.

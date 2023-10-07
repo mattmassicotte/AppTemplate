@@ -1,0 +1,8 @@
+SUPPORTED_PLATFORMS = macosx iphonesimulator iphoneos appletvsimulator appletvos xrsimulator xros
+TARGETED_DEVICE_FAMILY = 1,2,3
+SKIP_INSTALL = YES
+
+LD_RUNPATH_SEARCH_PATHS = @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = @executable_path/../Frameworks @loader_path/Frameworks
+
+DYLIB_COMPATIBILITY_VERSION = 1
