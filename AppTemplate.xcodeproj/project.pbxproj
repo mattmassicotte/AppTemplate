@@ -34,11 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C94722D52AD1859C006DE096 /* MultiTargetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTargetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94722D52AD1859C006DE096 /* MultiPlatformApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiPlatformApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94722D82AD1859C006DE096 /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
 		C94722DA2AD1859C006DE096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C94722DC2AD1859D006DE096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C94722DE2AD1859D006DE096 /* MultiTargetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultiTargetApp.entitlements; sourceTree = "<group>"; };
+		C94722DE2AD1859D006DE096 /* MultiPlatformApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultiPlatformApp.entitlements; sourceTree = "<group>"; };
 		C94722E02AD1859D006DE096 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C94722E62AD1859E006DE096 /* AppTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94722EA2AD1859E006DE096 /* AppTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateTests.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C94723032AD185ED006DE096 /* Configurations */,
-				C94722D72AD1859C006DE096 /* MultiTargetApp */,
+				C94722D72AD1859C006DE096 /* MultiPlatformApp */,
 				C94722E92AD1859E006DE096 /* AppTemplateTests */,
 				C94722F32AD1859E006DE096 /* AppTemplateUITests */,
 				C94722D62AD1859C006DE096 /* Products */,
@@ -89,24 +89,24 @@
 		C94722D62AD1859C006DE096 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C94722D52AD1859C006DE096 /* MultiTargetApp.app */,
+				C94722D52AD1859C006DE096 /* MultiPlatformApp.app */,
 				C94722E62AD1859E006DE096 /* AppTemplateTests.xctest */,
 				C94722F02AD1859E006DE096 /* AppTemplateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C94722D72AD1859C006DE096 /* MultiTargetApp */ = {
+		C94722D72AD1859C006DE096 /* MultiPlatformApp */ = {
 			isa = PBXGroup;
 			children = (
 				C94722D82AD1859C006DE096 /* AppTemplateApp.swift */,
 				C94722DA2AD1859C006DE096 /* ContentView.swift */,
 				C94722DC2AD1859D006DE096 /* Assets.xcassets */,
-				C94722DE2AD1859D006DE096 /* MultiTargetApp.entitlements */,
+				C94722DE2AD1859D006DE096 /* MultiPlatformApp.entitlements */,
 				C94722DF2AD1859D006DE096 /* Preview Content */,
 				C94723062AD1AC9E006DE096 /* Info.plist */,
 			);
-			path = MultiTargetApp;
+			path = MultiPlatformApp;
 			sourceTree = "<group>";
 		};
 		C94722DF2AD1859D006DE096 /* Preview Content */ = {
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C94722D42AD1859C006DE096 /* MultiTargetApp */ = {
+		C94722D42AD1859C006DE096 /* MultiPlatformApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C94722FA2AD1859E006DE096 /* Build configuration list for PBXNativeTarget "MultiTargetApp" */;
+			buildConfigurationList = C94722FA2AD1859E006DE096 /* Build configuration list for PBXNativeTarget "MultiPlatformApp" */;
 			buildPhases = (
 				C94722D12AD1859C006DE096 /* Sources */,
 				C94722D22AD1859C006DE096 /* Frameworks */,
@@ -158,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = MultiTargetApp;
+			name = MultiPlatformApp;
 			productName = AppTemplate;
-			productReference = C94722D52AD1859C006DE096 /* MultiTargetApp.app */;
+			productReference = C94722D52AD1859C006DE096 /* MultiPlatformApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C94722E52AD1859E006DE096 /* AppTemplateTests */ = {
@@ -235,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C94722D42AD1859C006DE096 /* MultiTargetApp */,
+				C94722D42AD1859C006DE096 /* MultiPlatformApp */,
 				C94722E52AD1859E006DE096 /* AppTemplateTests */,
 				C94722EF2AD1859E006DE096 /* AppTemplateUITests */,
 			);
@@ -300,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		C94722E82AD1859E006DE096 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C94722D42AD1859C006DE096 /* MultiTargetApp */;
+			target = C94722D42AD1859C006DE096 /* MultiPlatformApp */;
 			targetProxy = C94722E72AD1859E006DE096 /* PBXContainerItemProxy */;
 		};
 		C94722F22AD1859E006DE096 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C94722D42AD1859C006DE096 /* MultiTargetApp */;
+			target = C94722D42AD1859C006DE096 /* MultiPlatformApp */;
 			targetProxy = C94722F12AD1859E006DE096 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C94722FA2AD1859E006DE096 /* Build configuration list for PBXNativeTarget "MultiTargetApp" */ = {
+		C94722FA2AD1859E006DE096 /* Build configuration list for PBXNativeTarget "MultiPlatformApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C94722FB2AD1859E006DE096 /* Debug */,
