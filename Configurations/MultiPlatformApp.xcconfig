@@ -11,3 +11,6 @@ SKIP_INSTALL = NO
 // note that the bundle layout of macOS apps is slightly different
 LD_RUNPATH_SEARCH_PATHS = @executable_path/Frameworks
 LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = @executable_path/../Frameworks
+
+// customize this info.plist key for watchOS
+INFOPLIST_KEY_WKWatchOnly[sdk=watch*] = YES

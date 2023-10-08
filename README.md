@@ -29,13 +29,13 @@ Because there can be such a variety of targets, I thought it would be useful to 
 
 ### MultiPlatformApp
 
-This is a standard application target that builds for all Apple platforms that support standalone apps. That means it supports macOS, iOS, tvOS, and visionOS. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
+This is a standard application target that builds for all Apple platforms: macOS, iOS, tvOS, visionOS, and watchOS. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
 
-This app also includes to related test targets: `MultiPlatformAppTests` and `MultiPlatformAppUITests`.
+This app also includes two related test targets: `MultiPlatformAppTests` and `MultiPlatformAppUITests`.
 
 ### SharedFramework
 
-This is a shared framework target. This is a really useful structure for storing common code between an app and other bundled executables, like a widget extension. I've chosen to use a dynamic library here. This is a trade-off between app launch and app size. A dynamic library will require a little more work at launch time. But in exchange, there's only one copy of the shared code within the app.
+This is a shared framework target, also built for all platforms. This is a really useful structure for storing common code between an app and other bundled executables, like a widget extension. I've chosen to use a dynamic library here. This is a trade-off between app launch and app size. A dynamic library will require a little more work at launch time. But in exchange, there's only one copy of the shared code within the app.
 
 A static library, which is the default for SPM packages, will improve launch times. But, you'll have to pay a size penalty for each excutable that needs the shared code. Inceased binary sizes can also hurt launch times, so this isn't a trival thing to compare.
 
@@ -43,7 +43,7 @@ I wouldn't overthink this too much. Especially since a framework also is a logic
 
 ### ShareExtension
 
-This is an extension target. It depends on and links against `SharedFramework`, and is embedded within `MultiPlatformApp`. However! macOS does not support share extensions, so the embedding build phase has to be filtered by platform. This is a very powerful Xcode feature, and definitely something worth knowing about when building for multiple platforms.
+This is an extension target. It depends on and links against `SharedFramework`, and is embedded within `MultiPlatformApp`. However! macOS and watchOS do not support share extensions, so the embedding build phase has to be filtered by platform. This is a very powerful Xcode feature, and definitely something worth knowing about when building for multiple platforms.
 
 Also, note that this target has to customize its bundle identifier because extension bundle ids have to be prefixed with their container app.
 
