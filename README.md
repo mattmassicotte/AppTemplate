@@ -41,6 +41,12 @@ A static library, which is the default for SPM packages, will improve launch tim
 
 I wouldn't overthink this too much. Especially since a framework also is a logical organizational structure.
 
+### ShareExtension
+
+This is an extension target. It depends on and links against `SharedFramework`, and is embedded within `MultiPlatformApp`. However! macOS does not support share extensions, so the embedding build phase has to be filtered by platform. This is a very powerful Xcode feature, and definitely something worth knowing about when building for multiple platforms.
+
+Also, note that this target has to customize its bundle identifier because extension bundle ids have to be prefixed with their container app.
+
 ## Contributing and Collaboration
 
 I'd love to hear from you! Get in touch via [mastodon](https://mastodon.social/@mattiem), an issue, or a pull request.
