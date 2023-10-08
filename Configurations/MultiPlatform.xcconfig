@@ -1,0 +1,9 @@
+// add support for all platforms
+SUPPORTED_PLATFORMS = macosx iphonesimulator iphoneos appletvsimulator appletvos xrsimulator xros
+
+// support all devices types:
+// 1: iPhone
+// 2: iPad
+// 3: TV
+// 7: Vision
+TARGETED_DEVICE_FAMILY = 1,2,3,7

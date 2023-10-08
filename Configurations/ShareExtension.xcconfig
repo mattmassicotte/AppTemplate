@@ -1,3 +1,8 @@
+#include "Configurations/MultiPlatform.xcconfig"
+
 INFOPLIST_FILE = ${TARGET_NAME}/Info.plist
 PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX)org.massicotte.MultiPlatformApp.${TARGET_NAME}
-SUPPORTED_PLATFORMS = iphonesimulator iphoneos appletvsimulator appletvos xrsimulator xros
+
+// must override platforms to remove macOS, share extension aren't supported there
+// and, the social default doesn't work on xros
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos appletvsimulator appletvos

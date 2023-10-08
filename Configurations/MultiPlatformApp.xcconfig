@@ -1,0 +1,13 @@
+#include "Configurations/MultiPlatform.xcconfig"
+
+INFOPLIST_FILE = ${TARGET_NAME}/Info.plist
+CODE_SIGN_ENTITLEMENTS = ${TARGET_NAME}/${TARGET_NAME}.entitlements
+GENERATE_INFOPLIST_FILE = YES
+
+DEVELOPMENT_ASSET_PATHS = ${TARGET_NAME}/Preview\ Content
+
+SKIP_INSTALL = NO
+
+// note that the bundle layout of macOS apps is slightly different
+LD_RUNPATH_SEARCH_PATHS = @executable_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = @executable_path/../Frameworks
