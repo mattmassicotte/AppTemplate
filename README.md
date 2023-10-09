@@ -29,9 +29,11 @@ Because there can be such a variety of targets, I thought it would be useful to 
 
 ### MultiPlatformApp
 
-This is a standard application target that builds for all Apple platforms: macOS, iOS, tvOS, visionOS, and watchOS. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
+This is a standard application target that builds for all Apple platforms: macOS, iOS, tvOS, visionOS, watchOS, and catalyst. Multi-platform targets are kind of amazing, and used to be extremely difficult to pull off. I **absolutely** love supporting multiple platforms, even if you don't intend on shipping to all. Especially macOS, since it doesn't require a simulator, and can build/test with much less overhead.
 
 This app also includes two related test targets: `MultiPlatformAppTests` and `MultiPlatformAppUITests`.
+
+Note that supporting watchOS is a little special, since there are multiple types of watchOS apps. This is a true standalone app, with no iOS companion. I have a feeling this isn't what most people woudl want, but its possible so I included it. It's also a little strange to support both macOS and catalyst, but again, possible so why not.
 
 ### SharedFramework
 
