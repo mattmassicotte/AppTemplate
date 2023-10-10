@@ -105,6 +105,7 @@
 
 /* Begin PBXFileReference section */
 		C923F3622AD2EE250041D01D /* MultiPlatform.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MultiPlatform.xcconfig; sourceTree = "<group>"; };
+		C93791A22AD5DD1200665F50 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		C94722D52AD1859C006DE096 /* MultiPlatformApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiPlatformApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94722D82AD1859C006DE096 /* AppTemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTemplateApp.swift; sourceTree = "<group>"; };
 		C94722DA2AD1859C006DE096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -258,12 +259,13 @@
 		C94723032AD185ED006DE096 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				C94723042AD185FB006DE096 /* Project.xcconfig */,
+				C923F3622AD2EE250041D01D /* MultiPlatform.xcconfig */,
 				C94723052AD1870A006DE096 /* MultiPlatformApp.xcconfig */,
 				C9C213152AD1EB8900C60282 /* MultiPlatformAppTests.xcconfig */,
+				C93791A22AD5DD1200665F50 /* Project-Debug.xcconfig */,
+				C94723042AD185FB006DE096 /* Project.xcconfig */,
 				C9C213392AD1EDD500C60282 /* SharedFramework.xcconfig */,
 				C9C2134E2AD2E4CC00C60282 /* ShareExtension.xcconfig */,
-				C923F3622AD2EE250041D01D /* MultiPlatform.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -634,7 +636,7 @@
 /* Begin XCBuildConfiguration section */
 		C94722F82AD1859E006DE096 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C94723042AD185FB006DE096 /* Project.xcconfig */;
+			baseConfigurationReference = C93791A22AD5DD1200665F50 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -666,12 +668,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
